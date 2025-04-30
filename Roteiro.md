@@ -10,3 +10,6 @@
 2. Criar o componente Navbar
 
     2.1 Criar o subcomponente CartLogo
+    2.2 Criar o subcomponente LocationBar
+    2.3 Criar o subcomponente Actionbar
+
