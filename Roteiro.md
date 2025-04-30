@@ -13,3 +13,8 @@
     2.2 Criar o subcomponente LocationBar
     2.3 Criar o subcomponente Actionbar
 
+3. Rota de home criada
+
+4. Trabalhando no primeiro componente da home
+
+    4.1 Componente Intro
