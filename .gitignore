@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-roteiro.md
+Roteiro.md
 
 # Editor directories and files
 .vscode/*
