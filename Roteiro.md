@@ -4,3 +4,9 @@
     
     -->criar uma pasta styles -->themes -->default.ts em src
     -->criar criar global.ts em styles 
+
+    -->criar uma pasta @types --> styles.d.ts em src
+
+2. Criar o componente Navbar
+
+    2.1 Criar o subcomponente CartLogo
