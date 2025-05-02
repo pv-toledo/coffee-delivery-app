@@ -34,19 +34,19 @@ export const defaultTheme = {
             TitleXL: {
                 'font-size': '3rem',
                 'line-height': '130%',
-                'font-weight': 'extrabold'
+                'font-weight': '800'
             }, 
 
             TitleL: {
                 'font-size': '2rem',
                 'line-height': '130%',
-                'font-weight': 'extrabold'
+                'font-weight': '800'
             }, 
 
             TitleM: {
                 'font-size': '1.5rem',
                 'line-height': '130%',
-                'font-weight': 'extrabold'
+                'font-weight': '800'
             }, 
 
             TitleS: {
