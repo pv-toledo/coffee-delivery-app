@@ -34,8 +34,7 @@ export const CardTagContainer = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 5.75rem;
-   
-    
+       
 `
 
 export const Tag = styled.div`

@@ -1,5 +1,6 @@
 import { CardContainer, CardTagContainer, Subtitle, Tag, Title } from "./styles";
 import teste from '../../../../../../assets/Coffees/teste.png'
+import { Buy } from "./Buy";
 
 
 export function Card() {
@@ -14,6 +15,8 @@ export function Card() {
             <Title>Expresso Tradicional</Title>
             <Subtitle>O tradicional café feito com água quente e grãos moídos</Subtitle>
 
-        </CardContainer>
+            <Buy />
+
+        </CardContainer> 
     )
 } 

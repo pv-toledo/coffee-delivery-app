@@ -6,7 +6,7 @@ export function List () {
         <ListContainer>
             <h2>Nossos cafés</h2>
             <CoffeeList>
-                <Card />
+                <Card /> 
             </CoffeeList>
         </ListContainer>
         
