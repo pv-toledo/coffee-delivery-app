@@ -15,7 +15,7 @@ export function Card() {
             <Title>Expresso Tradicional</Title>
             <Subtitle>O tradicional café feito com água quente e grãos moídos</Subtitle>
 
-            <Buy />
+            <Buy /> 
 
         </CardContainer> 
     )

@@ -30,15 +30,17 @@ export const Actions = styled.div`
    display: flex;
    align-items: center;
    justify-content: center;
-   gap: 0.5rem;
+   gap: 0.5rem; 
+
+   
 
 `
 
 export const Counter = styled.div`
    display: flex;
    align-items: center;
-   flex: 1;
-   
+   margin: auto;
+   gap: 0.25rem;
    padding: 0.5rem;
    border-radius: 6px;
    background-color: ${props => props.theme.colors["base-button"]};
@@ -53,9 +55,11 @@ export const Counter = styled.div`
    span {
       color: ${props => props.theme.colors["base-title"]};
       font-family: ${props => props.theme.typography.roboto["font-family"]};
-      font-size: ${props => props.theme.typography.roboto.TitleM["font-size"]};
-      font-weight: ${props => props.theme.typography.roboto.TitleM.fontWeight.regular};
-      line-height: ${props => props.theme.typography.roboto.TitleM["line-height"]};
+      font-size: ${props => props.theme.typography.roboto.TitleL["font-size"]};
+      font-weight: ${props => props.theme.typography.roboto.TitleL.fontWeight.regular};
+      line-height: ${props => props.theme.typography.roboto.TitleL["line-height"]};
+      width: 1.25rem;
+      text-align: center;
    }
 
 `

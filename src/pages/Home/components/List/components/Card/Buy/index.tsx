@@ -29,6 +29,6 @@ export function Buy() {
 
             </Actions>
 
-        </BuyContainer>
+        </BuyContainer> 
     )
 }
