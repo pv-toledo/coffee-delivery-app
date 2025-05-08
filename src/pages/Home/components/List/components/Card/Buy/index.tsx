@@ -1,9 +1,21 @@
 import { Minus, Plus, ShoppingCartSimple } from "phosphor-react";
-import { Actions, BuyContainer, CartButton, Counter } from "./styles";
+import { Actions, BuyContainer, CartButton, Counter, CounterButton } from "./styles";
 import { useTheme } from "styled-components";
+import { useState } from "react";
 
 export function Buy() {
     const theme = useTheme()
+
+    const [amount, setAmount] = useState(0);
+
+    function increaseAmount () {
+        setAmount(state => state+1)
+    }
+
+    function decreaseAmount () {
+        if (amount > 0) return setAmount(state => state-1)
+    }
+
     return (
         <BuyContainer>
             <div>
@@ -12,15 +24,15 @@ export function Buy() {
 
             <Actions>
                 <Counter>
-                    <button>
-                        <Minus size={14} color={theme.colors.purple} weight="bold" />
-                    </button>
+                    <CounterButton onClick={decreaseAmount}> {/* currentColor para definir a cor em styles.ts */}
+                        <Minus size={14} color="currentColor" weight="bold" /> 
+                    </CounterButton>
 
-                    <span>1</span>
+                    <span>{amount}</span>
 
-                    <button>
-                        <Plus size={14} color={theme.colors.purple} weight="bold" />
-                    </button>
+                    <CounterButton onClick={increaseAmount}>
+                        <Plus size={14} color="currentColor" weight="bold" />
+                    </CounterButton>
                 </Counter>
 
                 <CartButton>

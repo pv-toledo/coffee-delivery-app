@@ -45,12 +45,6 @@ export const Counter = styled.div`
    border-radius: 6px;
    background-color: ${props => props.theme.colors["base-button"]};
 
-   button {
-      background-color: transparent;
-      display: flex;
-      align-items: center;
-      border: none;
-   }
 
    span {
       color: ${props => props.theme.colors["base-title"]};
@@ -60,6 +54,21 @@ export const Counter = styled.div`
       line-height: ${props => props.theme.typography.roboto.TitleL["line-height"]};
       width: 1.25rem;
       text-align: center;
+   }
+
+`
+
+export const CounterButton = styled.button`
+   background-color: transparent;
+   display: flex;
+   align-items: center;
+   border: none;
+   transition: all 0.2s ease;
+   color: ${props => props.theme.colors.purple};
+
+   &:hover {
+      color: red;
+      cursor: pointer;
    }
 
 `
