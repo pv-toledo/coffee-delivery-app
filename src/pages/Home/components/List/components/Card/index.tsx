@@ -1,5 +1,5 @@
 import { CardContainer, CardTagContainer, Subtitle, Tag, Title } from "./styles";
-import teste from '../../../../../../assets/Coffees/teste.png'
+import teste from '../../../../../../assets/Coffees/expresso.png'
 import { Buy } from "./Buy";
 
 

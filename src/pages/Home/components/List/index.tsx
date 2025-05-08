@@ -1,6 +1,6 @@
 import { Card } from "./components/Card";
 import { CoffeeList, ListContainer } from "./styles";
-
+// import {coffees} from "../../../../../data.json"
 export function List() {
     return (
         <ListContainer>

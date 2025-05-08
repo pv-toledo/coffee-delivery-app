@@ -6,7 +6,7 @@ import { useState } from "react";
 export function Buy() {
     const theme = useTheme()
 
-    const [amount, setAmount] = useState(0);
+    const [amount, setAmount] = useState<number>(0);
 
     function increaseAmount () {
         setAmount(state => state+1)
