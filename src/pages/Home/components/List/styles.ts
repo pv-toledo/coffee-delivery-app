@@ -6,12 +6,21 @@ export const ListContainer = styled.div`
     flex-direction: column;
     gap: 3.375rem;
     margin-top: 2rem;
-    justify-content: flex-start;
     align-items: center;
     
+
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 3.375rem;
+        
+        
+        
+    }
+       
+    
     h2 {
-        align-self: flex-start;
-        margin-left: 10rem;
+        
         font-family: ${props => props.theme.typography.baloo2["font-family"]};
         font-size: ${props => props.theme.typography.baloo2.TitleL["font-size"]};
         font-weight: ${props => props.theme.typography.baloo2.TitleL["font-weight"]};

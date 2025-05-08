@@ -14,6 +14,7 @@ export const CardContainer = styled.div`
     border-top-left-radius: 6px;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 36px;
+    margin: auto;
     
     
     img {

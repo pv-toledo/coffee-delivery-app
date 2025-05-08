@@ -1,14 +1,34 @@
 import { Card } from "./components/Card";
 import { CoffeeList, ListContainer } from "./styles";
 
-export function List () {
+export function List() {
     return (
         <ListContainer>
-            <h2>Nossos cafés</h2>
-            <CoffeeList>
-                <Card /> 
-            </CoffeeList>
+            <div id="wrapper">
+                <h2>Nossos cafés</h2>
+
+                <CoffeeList>
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                </CoffeeList>
+
+            </div>
+
+
+
         </ListContainer>
-        
+
     )
 } 
