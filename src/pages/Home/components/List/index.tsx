@@ -1,6 +1,6 @@
 import { Card } from "./components/Card";
 import { CoffeeList, ListContainer } from "./styles";
-// import {coffees} from "../../../../../data.json"
+import { coffees } from "../../../../../data.json"
 export function List() {
     return (
         <ListContainer>
@@ -8,25 +8,15 @@ export function List() {
                 <h2>Nossos cafés</h2>
 
                 <CoffeeList>
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    {coffees.map(coffee => (
+                        <Card
+                            item={coffee}
+                            key={coffee.id}
+                        />
+                    ))}
                 </CoffeeList>
 
             </div>
-
-
 
         </ListContainer>
 

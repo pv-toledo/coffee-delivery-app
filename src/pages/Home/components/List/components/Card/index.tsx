@@ -1,22 +1,37 @@
 import { CardContainer, CardTagContainer, Subtitle, Tag, Title } from "./styles";
-import teste from '../../../../../../assets/Coffees/expresso.png'
 import { Buy } from "./Buy";
 
+interface CoffeeDataType {
+    id: string
+    title: string
+    subtitle: string
+    tags: string[]
+    price: number
+    image: string
+}
 
-export function Card() {
+interface CardProps {
+    item: CoffeeDataType
+}
+
+export function Card({item}: CardProps) {
     return (
         <CardContainer>
-            <img src={teste} alt="" />
+            <img src={item.image}/>
 
             <CardTagContainer>
-                <Tag>TRADICIONAL</Tag>
+
+                {item.tags.map(tag => (
+                    <Tag>{tag.toUpperCase()}</Tag>
+                ))}
+                
             </CardTagContainer>
 
-            <Title>Expresso Tradicional</Title>
-            <Subtitle>O tradicional café feito com água quente e grãos moídos</Subtitle>
+            <Title>{item.title}</Title>
+            <Subtitle>{item.subtitle}</Subtitle>
 
-            <Buy /> 
+            <Buy />
 
-        </CardContainer> 
+        </CardContainer>
     )
 } 
