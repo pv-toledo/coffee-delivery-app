@@ -3,17 +3,21 @@ import { Actions, BuyContainer, CartButton, Counter, CounterButton } from "./sty
 import { useTheme } from "styled-components";
 import { useState } from "react";
 
-export function Buy() {
+interface BuyProps {
+    id: string
+}
+
+export function Buy({id}: BuyProps) {
     const theme = useTheme()
 
-    const [amount, setAmount] = useState<number>(0);
+    const [amount, setAmount] = useState<number[]>([0]);
 
     function increaseAmount () {
-        setAmount(state => state+1)
+        
     }
 
     function decreaseAmount () {
-        if (amount > 0) return setAmount(state => state-1)
+        
     }
 
     return (

@@ -1,7 +1,7 @@
 import { CardContainer, CardTagContainer, Subtitle, Tag, Title } from "./styles";
 import { Buy } from "./Buy";
 
-interface CoffeeDataType {
+export interface CoffeeDataType {
     id: string
     title: string
     subtitle: string
@@ -30,7 +30,9 @@ export function Card({item}: CardProps) {
             <Title>{item.title}</Title>
             <Subtitle>{item.subtitle}</Subtitle>
 
-            <Buy />
+            <Buy
+                id={item.id} 
+            />
 
         </CardContainer>
     )
