@@ -1,10 +1,11 @@
-import { MapPinLine } from "phosphor-react";
-import { Wrapper, WrapperTitle } from "./styles";
+import { CurrencyDollar, MapPinLine } from "phosphor-react";
+import { Container, Wrapper, WrapperTitle } from "./styles";
 import { useTheme } from "styled-components";
 import { FormProvider, useForm } from 'react-hook-form'
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as zod from 'zod'
 import { AddressForm } from "./AddressForm";
+import { PaymentForm } from "./PaymentForm";
 
 export function Forms() {
     const theme = useTheme()
@@ -49,24 +50,46 @@ export function Forms() {
     const { handleSubmit, reset, watch, register } = addressForm
 
     return (
-        <Wrapper>
-            <WrapperTitle>
-                <div>
-                    <MapPinLine size={22} color={theme.colors["yellow-dark"]} />
-                </div>
-                <div>
-                    <p id="title">Endereço de Entrega</p>
-                    <p id="subtitle">Informe o endereço onde deseja receber seu pedido</p>
-                </div>
-            </WrapperTitle>
 
-            <form>
-                <FormProvider {...addressForm}>
-                    <AddressForm />
-                </FormProvider>
-            </form>
+        <Container>
+            <Wrapper>
+                <WrapperTitle>
+                    <div>
+                        <MapPinLine size={22} color={theme.colors["yellow-dark"]} />
+                    </div>
+                    <div>
+                        <p className="title">Endereço de Entrega</p>
+                        <p className="subtitle">Informe o endereço onde deseja receber seu pedido</p>
+                    </div>
+                </WrapperTitle>
+
+                <form>
+                    <FormProvider {...addressForm}>
+                        <AddressForm />
+                    </FormProvider>
+                </form>
 
 
-        </Wrapper>
+            </Wrapper>
+
+            <Wrapper>
+                <WrapperTitle>
+                    <div>
+                        <CurrencyDollar size={22} color={theme.colors.purple} />
+                    </div>
+                    <div>
+                        <p className="title">Pagamento</p>
+                        <p className="subtitle">O pagamento é feito na entrega. Escolha a forma que deseja pagar</p>
+                    </div>
+                </WrapperTitle>
+
+                <PaymentForm />
+                
+            </Wrapper>
+        </Container>
+
+
+
+
     )
 }

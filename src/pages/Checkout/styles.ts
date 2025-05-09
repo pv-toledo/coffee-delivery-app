@@ -8,6 +8,7 @@ export const CheckoutContainer = styled.div`
 export const FormWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 
     p {
         color: ${props => props.theme.colors["base-subtitle"]};

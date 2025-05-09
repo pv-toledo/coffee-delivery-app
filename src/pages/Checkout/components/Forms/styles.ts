@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+`
+
 export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -17,7 +23,7 @@ export const WrapperTitle = styled.div`
     flex-grow:1;
     gap: 0.5rem;
 
-    #title {
+    .title {
         color: ${props => props.theme.colors["base-subtitle"]};
         font-family: ${props => props.theme.typography.roboto["font-family"]};
         font-size: ${props => props.theme.typography.roboto.TitleM["font-size"]};
@@ -26,7 +32,7 @@ export const WrapperTitle = styled.div`
 
     }
 
-    #subtitle {
+    .subtitle {
         color: ${props => props.theme.colors["base-text"]};
         font-family: ${props => props.theme.typography.roboto["font-family"]};
         font-size: ${props => props.theme.typography.roboto.TitleS["font-size"]};

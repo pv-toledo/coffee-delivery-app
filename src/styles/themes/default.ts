@@ -78,7 +78,7 @@ export const defaultTheme = {
                 'font-size': '1rem',
                 'line-height': '130%',
                 fontWeight: {
-                    'regular': 'regular',
+                    'regular': '400',
                     'bold': 'bold'
                 } 
             }, 
