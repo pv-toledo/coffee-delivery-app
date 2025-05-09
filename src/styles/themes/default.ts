@@ -86,7 +86,7 @@ export const defaultTheme = {
             TitleS: {
                 'font-size': '0.875rem',
                 'line-height': '130%',
-                'font-weight': 'regular'
+                'font-weight': '400'
             }, 
              
 
