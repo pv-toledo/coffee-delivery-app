@@ -80,5 +80,11 @@ export const CartButton = styled.button`
    border-radius: 6px;
    background-color: ${props => props.theme.colors["purple-dark"]};
    padding: 0.5rem;
+   transition: all 0.2s ease;
+
+   &:hover {
+      background-color: ${props => props.theme.colors["purple"]};
+      cursor: pointer;
+   }
 
 `

@@ -7,17 +7,17 @@ interface BuyProps {
     id: string
 }
 
-export function Buy({id}: BuyProps) {
+export function Buy({ id }: BuyProps) {
     const theme = useTheme()
 
-    const [amount, setAmount] = useState<number[]>([0]);
+    const [amount, setAmount] = useState<number>(0);
 
-    function increaseAmount () {
-        
+    function increaseAmount() {
+        setAmount(state => state + 1)
     }
 
-    function decreaseAmount () {
-        
+    function decreaseAmount() {
+        if (amount > 0) return setAmount(state => state - 1)
     }
 
     return (
@@ -29,7 +29,7 @@ export function Buy({id}: BuyProps) {
             <Actions>
                 <Counter>
                     <CounterButton onClick={decreaseAmount}> {/* currentColor para definir a cor em styles.ts */}
-                        <Minus size={14} color="currentColor" weight="bold" /> 
+                        <Minus size={14} color="currentColor" weight="bold" />
                     </CounterButton>
 
                     <span>{amount}</span>
@@ -39,12 +39,12 @@ export function Buy({id}: BuyProps) {
                     </CounterButton>
                 </Counter>
 
-                <CartButton>
+                <CartButton value={id}>
                     <ShoppingCartSimple size={22} color={theme.colors["base-card"]} weight="fill" />
                 </CartButton>
 
             </Actions>
 
-        </BuyContainer> 
+        </BuyContainer>
     )
 }
